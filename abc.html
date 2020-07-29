@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0 auto;
+            padding: 0 ;
+        }
+        nav ul{
+            background-color: aqua;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav li {
+            position: relative;
+        }
+        nav ul li{
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            color: red;
+            margin-left: -5px;
+            border-right: 1px solid gray;
+        }
+        nav ul li:last-child{
+            border-right:none ;
+        }
+        nav ul li a{
+            color: red;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover{
+           color: grey;
+        }
+        .menu2{
+            display: none;
+            position: absolute;
+        }
+        nav li:hover .menu2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+                <li><a href="#">Trang chủ <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="menu2">
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> heading1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> heading1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> heading1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> heading1</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> heading1</a></li>
+                    </ul>
+                 </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li><a href="#">Đào tạo</a></li>
+                <li><a href="#">Học bổng</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
